@@ -31,9 +31,9 @@ icon = 'twitter'
 url = 'https://twitter.com/harshc_/'
 
 [[params.social]]
-name = 'GitLab'
-icon = 'gitlab'
-url = 'https://gitlab.com/athul/'
+name = 'Instagram'
+icon = 'instagram'
+url = 'https://instagram.com/iharshchauhan/'
 
 # Main menu Items
 
