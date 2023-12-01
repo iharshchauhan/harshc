@@ -1,4 +1,4 @@
-baseurl = "https://example.org/"
+baseurl = "/"
 languageCode = "en-us"
 theme = "archie"
 copyright = "© Harsh Chauhan"
