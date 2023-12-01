@@ -1,0 +1,43 @@
+baseurl = "https://example.org/"
+languageCode = "en-us"
+theme = "archie"
+copyright = "© Harsh Chauhan"
+paginate = 5
+
+paginate=3 # articles per page
+
+[params]
+	mode="auto" # color-mode → dark,toggle or auto
+	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+	subtitle = ''
+	mathjax = true # enable MathJax support
+	katex = true # enable KaTeX support
+
+# Social Tags
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/iharshchauhan"
+
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/harshc_/"
+
+[[params.social]]
+name = "GitLab"
+icon = "gitlab"
+url = "https://gitlab.com/athul/"
+
+# Main menu Items
+
+[[menu.main]]
+name = "Posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 1
