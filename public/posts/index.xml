@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on harshc_</title>
+    <link>https://example.org/posts/</link>
+    <description>Recent content in Posts on harshc_</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Harsh Chauhan</copyright>
+    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Damn! Startups again!</title>
+      <link>https://example.org/posts/damn-startups-again/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/damn-startups-again/</guid>
+      <description>A recent observation while talking to my founder pals: firing is part of the early startup journey. It’s tough because not everyone fits in, and as a founder, your role isn’t to mold them but to find those who naturally align. You’re in the game to find those who vibe with your vision, not to run a training camp. The deal is simple: treat the keepers well, be fair to the others with a decent severance, but then you’ve gotta let go.</description>
+    </item>
+    <item>
+      <title>Disappointment.com!</title>
+      <link>https://example.org/posts/disappointment.com/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/disappointment.com/</guid>
+      <description>Remember when the internet was just cat videos and memes? Now, it’s like an awkward family reunion with my online ‘relatives’ – always expecting something, always disappointed. It’s a classic case of, ‘Back in my day, we didn’t need approval from internet strangers.’ But here we are, getting unsolicited advice like, ‘Do this, not that’ or ‘Don’t get offended.’ Like, can’t we all just vibe in our own lanes?.
+Spoiler alert: Your expectation of me being someone else is your circus to manage, not mine.</description>
+    </item>
+  </channel>
+</rss>
