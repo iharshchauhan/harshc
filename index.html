@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to My Hugo Website!</h1>
+
+    <p>This is the homepage of my Hugo website. Feel free to explore and learn more about my projects and interests.</p>
+
+    <h2>Latest Blog Posts</h2>
+
+    {{ range .Site.RegularPages.ByDate.Reverse }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+
+    <h2>About Me</h2>
+
+    <p>I am a passionate developer and love exploring new technologies. Check out my projects and GitHub profile for more information.</p>
+
+    <p>Enjoy your stay!</p>
+</body>
+</html>
