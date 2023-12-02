@@ -1,18 +1,26 @@
-<header>
-	<div class="main">
-		<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-	</div>
-	<nav>
-		{{ range .Site.Menus.main }}
-		<a href="{{ .URL }}">{{ .Name }}</a>
-		{{ end }}
-		{{ if eq .Site.Params.mode "toggle" -}}
-        | <span id="dark-mode-toggle" onclick="toggleTheme()"></span>
-		<script src="{{ .Site.BaseURL }}js/themetoggle.js"></script>
-		{{ end }}
-	</nav>
+<!DOCTYPE html>
+<html>
 	<head>
-	<link rel="icon" type="image/png" href="{{ .Site.BaseURL }}static/support/favicon.ico">
+		<meta charset="utf-8">
+		<title>{{ .Site.Title }}</title>
+		<!-- Other head elements -->
+		<link rel="icon" type="image/png" href="{{ .Site.BaseURL }}static/support/favicon.ico">
 	</head>
-
-</header>
+	<body>
+		<header>
+			<div class="main">
+				<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+			</div>
+			<nav>
+				{{ range .Site.Menus.main }}
+				<a href="{{ .URL }}">{{ .Name }}</a>
+				{{ end }}
+				{{ if eq .Site.Params.mode "toggle" -}}
+				| <span id="dark-mode-toggle" onclick="toggleTheme()"></span>
+				<script src="{{ .Site.BaseURL }}js/themetoggle.js"></script>
+				{{ end }}
+			</nav>
+		</header>
+		<!-- Rest of the HTML body -->
+	</body>
+</html>
