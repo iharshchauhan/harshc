@@ -6,7 +6,7 @@
 			float: left;
 			width: 15%;
 			margin-right: 20px;
-			margin-bottom: 100px;
+			margin-bottom: 20px;
 			pointer-events: none;
 		}
 	</style>
@@ -25,7 +25,7 @@
 					<img src="/support/h.jpg" alt="harshc" class="left-image">
 					
 					<p>Hey, and welcome to my modest corner of the web. This is my weblog about me exploring and building the world and its wide web. I am a Growth/Product person and an amateur human. You can learn more about me at <a href="/about">/about</a>.
-			<br> Here are the things that I have been documenting that I find interesting for my future self. I plan to be more active through my writing here:</p>
+			<br> <br> Here are the things that I have been documenting that I find interesting for my future self. I plan to be more active through my writing here:</p>
 					
 					{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 					{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
