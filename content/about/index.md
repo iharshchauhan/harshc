@@ -1,10 +1,9 @@
 ---
-title: About - Harsh Chauhan
+title: About
 date: 2023-12-01
 description: "About Harsh Chauhan"
 ---
 
-# About Me
 
 I, Harsh Chauhan, am an artist in the tech realm, crafting remarkable experiences and driving transformative growth. With a brushstroke of wit, a palette of creativity, and an unwavering passion for innovation, I have left an indelible mark on the canvas of the industry.
 
