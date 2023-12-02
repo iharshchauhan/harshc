@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
 	{{ partial "header.html" . }}
-	<style>
-		.left-image {
-			float: left;
-			width: 15%;
-			margin-right: 1.25rem;
-			margin-bottom: 1.50rem;
-			pointer-events: none;
-		}
-	</style>
+<style>
+	.left-image {
+		float: left;
+		width: 15%;
+		margin-right: 1.25rem;
+		margin-bottom: 1.50rem;
+		pointer-events: none;
+	}
+	
+	.description {
+		font-family: Arial, sans-serif; /* Replace with desired font family */
+		font-size: 16px; /* Replace with desired font size */
+		color: #333; /* Replace with desired font color */
+		/* Add any other desired font styles */
+	}
+</style>
+
 	<body>
 		<div class="content">
 			{{ partial "head.html" . }}
