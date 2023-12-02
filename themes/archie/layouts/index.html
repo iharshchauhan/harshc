@@ -17,7 +17,7 @@
 
 				
 				
-						<br> <br> Here are the things that I have been documenting that I find interesting for my future self. I plan to be more active through my writing here:.</p></h5> <!-- Add this line -->
+						<br> <br> Here are the things that I have been documenting that I find interesting for my future self. I plan to be more active through my writing here: </p></h5> <!-- Add this line -->
 					
 					{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 					{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
