@@ -5,7 +5,7 @@
 		.left-image {
 			float: left;
 			width: 10%;
-			margin-right: 40px;
+			margin-right: 20px;
 		}
 	</style>
 	<body>
@@ -20,11 +20,10 @@
 				</div>
 				
 				<section>
-					<img src="/support/h.jpg" alt="Description of the image" class="left-image">
+					<img src="/support/h.jpg" alt="harshc" class="left-image">
 					
-					<p>Hey, and welcome to my modest corner of the web. This is my weblog about me exploring and building the world and its wide web. I am a Growth/Product person and an amateur human. You can learn more about me at <a href="/about">/about</a>.</p>
-				
-					<p>Here are the things that I have been documenting that I find interesting for my future self. I plan to be more active through my writing here:</p>
+					<p>Hey, and welcome to my modest corner of the web. This is my weblog about me exploring and building the world and its wide web. I am a Growth/Product person and an amateur human. You can learn more about me at <a href="/about">/about</a>.
+				<br> <br> Here are the things that I have been documenting that I find interesting for my future self. I plan to be more active through my writing here:</p>
 					
 					{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 					{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
