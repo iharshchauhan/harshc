@@ -133,7 +133,7 @@ a:hover {
 .highlight pre code[class*='language-json']::before{
   content: 'json';
   background: dodgerblue;
-  color: #000000 
+   color: #000000 
 }
 .highlight pre code[class*='language-python']::before,
 .highlight pre code[class*='language-py']::before {
@@ -156,10 +156,4 @@ a:hover {
   content: 'Markdown';
   background: royalblue;
   color: whitesmoke ;
-}
-
-.border {
-  border: 2px solid black;
-  padding: 10px;
-  /* Add any other styling as per your requirements */
 }
