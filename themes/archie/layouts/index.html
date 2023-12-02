@@ -12,16 +12,28 @@
 					{{- end -}}
 				</div>
 				
-				<section> <!-- About Me section -->
-					<p> Hey, and welcome to my modest corner of the web. This is my weblog about me exploring and building the world and it's wide web. I am a Growth/Product person and an amateur human. You can learn more about me at <a href="/about">/about</a></p>
-					<br>
-					<br>
-					<p>Here are the things that I have been documenting that I find interesting for my future self. I plan to be more active through my writing here: </p>
-					<br>				
+				<section> <!-- Add this line -->
+					<p> Hey, and welcome to my modest corner of the web. This is my weblog about me exploring and building the world and it's wide web. I am a Growth/Product person and an amateur human. You can learn more about me at <a href="/about">/about</a>.
+
+				
+						<br> <br> Here are the things that I have been documenting that I find interesting for my future self. I plan to be more active through my writing here: </p></p> <!-- Add this line -->
+					
 					{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 					{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 					{{ range $paginator.Pages }}
 					<section class="list-item">
 						<h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
 						<time>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
-						<br
+						<br>{{ template "partials/pagedescription.html" . }}
+						<a class="readmore" href="{{ .RelPermalink }}">Read more ⟶</a>
+					</section>
+					{{ end }}
+					{{ template "partials/paginator.html" . }}
+				</section> <!-- Add this line -->
+				
+			</main>
+			{{ partial "footer.html" . }}
+		</div>
+		
+	</body>
+</html>
