@@ -2,16 +2,10 @@
 <html>
 	{{ partial "header.html" . }}
 	<style>
-		.row {
-			display: flex;
-		}
-		
-		.column {
-			flex: 1;
-		}
-		
-		.image-column {
-			margin-right: 20px;
+		.left-image {
+			float: left;
+			width: 10%;
+			margin-right: 40px;
 		}
 	</style>
 	<body>
@@ -25,33 +19,30 @@
 					{{- end -}}
 				</div>
 				
-				<section class="row">
-					<div class="column image-column">
-						<img src="/support/h.jpg" alt="Description of the image" class="left-image">
-					</div>
+				<section>
+					<img src="/support/h.jpg" alt="Description of the image" class="left-image">
 					
-					<div class="column">
-						<p>Hey, and welcome to my modest corner of the web. This is my weblog about me exploring and building the world and its wide web. I am a Growth/Product person and an amateur human. You can learn more about me at <a href="/about">/about</a>.</p>
-						<br>
-						<br>
-						<p>Here are the things that I have been documenting that I find interesting for my future self. I plan to be more active through my writing here:</p>
-						
-						{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-						{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
-						{{ range $paginator.Pages }}
-						<section class="list-item">
-							<h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
-							<time>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
-							<br>{{ template "partials/pagedescription.html" . }}
-							<a class="readmore" href="{{ .RelPermalink }}">Read more ⟶</a>
-						</section>
-						{{ end }}
-						{{ template "partials/paginator.html" . }}
-					</div>
+					<p>Hey, and welcome to my modest corner of the web. This is my weblog about me exploring and building the world and its wide web. I am a Growth/Product person and an amateur human. You can learn more about me at <a href="/about">/about</a>.</p>
+					<br>
+					<br>
+					<p>Here are the things that I have been documenting that I find interesting for my future self. I plan to be more active through my writing here:</p>
+					
+					{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+					{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+					{{ range $paginator.Pages }}
+					<section class="list-item">
+						<h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
+						<time>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
+						<br>{{ template "partials/pagedescription.html" . }}
+						<a class="readmore" href="{{ .RelPermalink }}">Read more ⟶</a>
+					</section>
+					{{ end }}
+					{{ template "partials/paginator.html" . }}
 				</section>
 				
 			</main>
 			{{ partial "footer.html" . }}
 		</div>
+		
 	</body>
 </html>
