@@ -1,6 +1,6 @@
 body {
   color: rgb(0 0 0);
-  background-image: url("static/support/random.jpg");
+  background-colour: #DDD9D3;
   background-repeat: repeat;
 }
 
@@ -41,7 +41,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #ddd;
+  color: #535353;
 }
 h1::before {
   color: var(--darkMaincolor);
@@ -78,7 +78,7 @@ a:hover {
 }
 
 .site-description a {
-  color: #ddd;
+  color: #535353;
 }
 .site-description a:hover {
   color: black;
