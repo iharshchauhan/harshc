@@ -1,7 +1,9 @@
 body {
-  color: white;
-  background-image: linear-gradient(rgb(24 22 20 / 10%) 1px,black 0),linear-gradient(90deg,rgb(87 77 77 / 10%) 1px,#3f0000 0);
-  background-size: 24px 24px;
+  color: black;
+  background-image: url("static/support/SJnSXNkNXEpwMz9I9zJpuTdiSA.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 ::-moz-selection {
