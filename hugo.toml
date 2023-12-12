@@ -38,7 +38,7 @@ url = 'https://instagram.com/iharshchauhan/'
 # Main menu Items
 
 [[menu.main]]
-name = 'Master List'
+name = 'Logbook'
 url = '/posts'
 weight = 2
 
