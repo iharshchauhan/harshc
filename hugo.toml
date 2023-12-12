@@ -38,7 +38,7 @@ url = 'https://instagram.com/iharshchauhan/'
 # Main menu Items
 
 [[menu.main]]
-name = 'Posts'
+name = 'Master List'
 url = '/posts'
 weight = 2
 
@@ -48,6 +48,6 @@ url = '/about'
 weight = 1
 
 [[menu.main]]
-name = 'Categories'
+name = 'Topics'
 url = '/tags'
 weight = 3
