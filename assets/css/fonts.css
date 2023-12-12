@@ -39,3 +39,12 @@
        url('../fonts/ibm-plex-mono-v6-latin-500italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/ibm-plex-mono-v6-latin-500italic.svg#IBMPlexMono') format('svg'); /* Legacy iOS */
 }
+@font-face {
+  font-family: 'Bevietnampro';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5em;
+  src: url('../fonts/bevietnampro-regular.woff2') format('woff2'),
+       url('../fonts/bevietnampro-regular.woff') format('woff'),
+       url('../fonts/bevietnampro-regular.ttf') format('truetype');
+}
