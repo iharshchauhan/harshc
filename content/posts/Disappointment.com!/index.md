@@ -1,6 +1,7 @@
 ---
 title: Disappointment.com!
 date: 2022-01-01
+tags: [Shitpost]
 ---
 
 
