@@ -1,6 +1,7 @@
 body {
   color: white;
-  background-color: #202124;
+  background-image: linear-gradient(rgba(79,70,229,.1) 1px,transparent 0),linear-gradient(90deg,rgba(79,70,229,.1) 1px,transparent 0);
+  background-size: 24px 24px;
 }
 
 ::-moz-selection {
