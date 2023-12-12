@@ -48,6 +48,6 @@ url = '/about'
 weight = 1
 
 [[menu.main]]
-name = 'Index'
+name = 'Categories'
 url = '/tags'
 weight = 3
