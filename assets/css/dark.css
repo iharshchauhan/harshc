@@ -1,7 +1,7 @@
 body {
   color: rgb(0 0 0);
   background-image: url("static/support/613a072f86d7d43bb117ad97_bg-grid-dark.png") 
-    left top repeat rgb(185, 209, 199)
+    left top repeat rgb(185, 209, 199);
 }
 
 ::-moz-selection {
