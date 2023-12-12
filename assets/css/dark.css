@@ -1,9 +1,6 @@
 body {
   color: black;
   background-image: url("static/support/SJnSXNkNXEpwMz9I9zJpuTdiSA.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
 }
 
 ::-moz-selection {
