@@ -1,6 +1,6 @@
 body {
   color: black;
-  background-image: url("static/support/SJnSXNkNXEpwMz9I9zJpuTdiSA.svg");
+  background-image: <img src="/static/image.svg" alt="SVG Image">;
 }
 
 ::-moz-selection {
