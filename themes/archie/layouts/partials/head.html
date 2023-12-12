@@ -1,44 +1,14 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>{{ .Site.Title }}</title>
-		<!-- Other head elements -->
-		<link rel="icon" type="image/png" href="{{ .Site.BaseURL }}static/support/favicon.ico">
-		<script>
-			function toggleTheme() {
-				const body = document.body;
-				body.classList.toggle('dark-mode');
-				if (body.classList.contains('dark-mode')) {
-					localStorage.setItem('theme', 'dark');
-				} else {
-					localStorage.setItem('theme', 'light');
-				}
-			}
-
-			function loadTheme() {
-				const theme = localStorage.getItem('theme');
-				if (theme && theme === 'dark') {
-					document.body.classList.add('dark-mode');
-				}
-			}
-			loadTheme();
-		</script>
-	</head>
-	<body>
-		<header>
-			<div class="main">
-				<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-			</div>
-			<nav>
-				{{ range .Site.Menus.main }}
-				<a href="{{ .URL }}">{{ .Name }}</a>
-				{{ end }}
-				{{ if eq .Site.Params.mode "toggle" -}}
-				| <span id="dark-mode-toggle" onclick="toggleTheme()"></span>
-				{{ end }}
-			</nav>
-		</header>
-		<!-- Rest of the HTML body -->
-	</body>
-</html>
+<header>
+	<div class="main">
+		<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+	</div>
+	<nav>
+		{{ range .Site.Menus.main }}
+		<a href="{{ .URL }}">{{ .Name }}</a>
+		{{ end }}
+		{{ if eq .Site.Params.mode "toggle" -}}
+        | <span id="dark-mode-toggle" onclick="toggleTheme()"></span>
+		<script src="{{ .Site.BaseURL }}js/themetoggle.js"></script>
+		{{ end }}
+	</nav>
+</header>
