@@ -50,3 +50,6 @@ weight = 1
 # Disable Kinds
 
 disableKinds = ["tag1", "tag2", "tag3"]
+disableKinds = ['tags', 'tag1']
+disableKinds = ['tags', 'tag2']
+disableKinds = ['tags', 'tag3']
