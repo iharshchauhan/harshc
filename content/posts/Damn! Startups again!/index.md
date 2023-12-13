@@ -2,7 +2,7 @@
 title: Damn! Startups again!
 date: 2023-11-01
 description: "Startup life's real talk: Fire fast if the fit isn't right and focus on hiring doers first. Your startup's vibe attracts the big players later as you grow."
-tags: [Startup, Shitpost]
+tags: [Shitpost]
 ---
 
 
