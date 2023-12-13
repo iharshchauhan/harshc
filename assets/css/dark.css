@@ -40,7 +40,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #535353;
+  color: #ffffff;
 }
 h1::before {
   color: var(--darkMaincolor);
