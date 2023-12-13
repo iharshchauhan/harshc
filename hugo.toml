@@ -12,7 +12,7 @@ pygmentscodefencesguesssyntax = true
 paginate=3 # articles per page
 
 [params]
-	favicon = '/support/h.jpg'
+	favicon = '/support/h.png'
         mode='toggle' # color-mode → dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 	subtitle = ''
