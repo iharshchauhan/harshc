@@ -48,6 +48,7 @@ name = 'About'
 url = '/about'
 weight = 1
 
-# Disable Kinds
-
-disableKinds = ["tags", "tag1", "tag2", "tag3"]
+[[menu.main]]
+name = 'Topics'
+url = '/tags'
+weight = 3
