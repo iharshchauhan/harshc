@@ -1,9 +1,9 @@
 /* Markdown */
 :root{
---maincolor: red;
---bordercl:rebeccapurple;
+--maincolor: #014c00;
+--bordercl:#073800;
 --callouctcolor:dodgerblue;
---hovercolor:navy;
+--hovercolor:#558000;
 --darkMaincolor: #DB0030;
 }
 html {
@@ -22,7 +22,7 @@ body{
 }
 
 ::selection {
-  background: #b90000;
+  background: #045605;
   color: #fff;
 }
 
