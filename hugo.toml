@@ -3,7 +3,6 @@ languageCode = 'en-us'
 title = 'harshc_'
 theme="archie"
 copyright = '© Harsh Chauhan'
-favicon = "/support/h.jpg"
 
 # Code Highlight
 pygmentsstyle = 'monokai'
@@ -13,7 +12,8 @@ pygmentscodefencesguesssyntax = true
 paginate=3 # articles per page
 
 [params]
-	mode='auto' # color-mode → dark,toggle or auto
+	favicon = '/support/h.jpg'
+        mode='auto' # color-mode → dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 	subtitle = ''
 	mathjax = true # enable MathJax support
