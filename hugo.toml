@@ -13,7 +13,7 @@ paginate=3 # articles per page
 
 [params]
 	favicon = '/support/h.jpg'
-        mode='auto' # color-mode → dark,toggle or auto
+        mode='toggle' # color-mode → dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 	subtitle = ''
 	mathjax = true # enable MathJax support
