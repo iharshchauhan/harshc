@@ -1,6 +1,7 @@
 ---
 title: Disappointment.com!
 date: 2022-01-01
+description: "The internet has evolved from cat videos to an awkward family reunion with online 'relatives'. Expectations, disappointments, unsolicited advice – can't we just vibe in our own lanes?"
 tags: [Shitpost]
 ---
 
