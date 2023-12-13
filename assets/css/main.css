@@ -22,7 +22,7 @@ body{
 }
 
 ::selection {
-  background: var(--maincolor);
+  background: #DDD9D3;
   color: #fff;
 }
 
