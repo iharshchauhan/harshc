@@ -1,10 +1,10 @@
 body {
-  color: rgb(0 0 0);
-  background: #DDD9D3;
+  color: #ffffff;
+  background: #202124;
 }
 
 ::-moz-selection {
-  background: blue;
+  background: green;
   color: #fff;
   text-shadow: none;
 }
