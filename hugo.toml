@@ -47,3 +47,6 @@ name = 'About'
 url = '/about'
 weight = 1
 
+# Disable Kinds
+
+disableKinds = ["tag1", "tag2", "tag3"]
