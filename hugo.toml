@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'harshc_'
 theme="archie"
 copyright = '© Harsh Chauhan'
+favicon = "/support/h.jpg"
 
 # Code Highlight
 pygmentsstyle = 'monokai'
