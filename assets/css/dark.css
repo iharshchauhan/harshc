@@ -11,7 +11,7 @@ body {
 
 ::selection {
   background: red;
-  color: #fff;
+  color: #000;
   text-shadow: none;
 }
 
@@ -31,7 +31,7 @@ pre {
   padding: 1em;
 }
 blockquote {
-  border-color: blue;
+  border-color: #ff000080;
 }
 
 h1,
