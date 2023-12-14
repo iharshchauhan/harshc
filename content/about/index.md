@@ -26,10 +26,10 @@ My endeavors in social media marketing and community engagement strategies under
 
 Throughout my journey, I've had the privilege of being involved in various endeavours, offering my contributions in diverse capacities. Some highlights of my involvements include:
 <ul>  
-  <li> <a href="https://www.quillaudits.com/smart-contract-audit">QuillAudits </a> </li>
-  <li> <a href="https://ximivogueretail.com/">Ximi Vogue </a> </li>
-  <li> <a href="https://airtel.in">Airtel </a> </li>
-  <li> <a href="https://indiefolio.com/">Indiefolio </a> </li>
+  <li> QuillAudits </li>
+  <li> Ximi Vogue  </li>
+  <li> Airtel </li>
+  <li> Indiefolio </li>
 </ul>
 
 
