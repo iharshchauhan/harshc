@@ -25,12 +25,10 @@ My endeavors in social media marketing and community engagement strategies under
 *I dream of making a TON of money with computers and then possibly never touching a computer ever again, hehe jk. I prefer cold days, drink tea & listen to music every day.*
 
 Throughout my journey, I've had the privilege of being involved in various endeavours, offering my contributions in diverse capacities. Some highlights of my involvements include:
-<ul>
   <li><a href="https://www.quillaudits.com/smart-contract-audit">QuillAudits</a></li>
   <li><a href="https://ximivogueretail.com/">Ximi Vogue</a></li>
   <li><a href="https://airtel.in">Airtel</a></li>
   <li><a href="https://indiefolio.com/">Indiefolio</a></li>
-</ul>
 
 <h2> Let’s Connect and Create Tech Masterpieces </h2>
 
