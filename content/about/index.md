@@ -20,9 +20,9 @@ Throughout my career, I have emphasized the importance of customer experience ma
 
 My endeavors in social media marketing and community engagement strategies underscore my commitment to building strong relationships with users, fostering an environment of trust and brand loyalty. As I chart the course for growth and success in the digital space, I bring with me the tools, skills, and passion necessary to turn innovative ideas into reality.
 
-##I'm always left spellbound by the remarkable talent out there and the amazing innovations people come up with. If our paths have crossed, rest assured, I've probably taken a tour of your website and thought to myself, 'Now that's some top-notch work!' And, yes, I'm forever on the lookout to expand my library – my reading list is forever growing.
+*I'm always left spellbound by the remarkable talent out there and the amazing innovations people come up with. If our paths have crossed, rest assured, I've probably taken a tour of your website and thought to myself, 'Now that's some top-notch work!' And, yes, I'm forever on the lookout to expand my library – my reading list is forever growing.*
 
-***I dream of making a TON of money with computers and then possibly never touching a computer ever again, hehe jk. I prefer cold days, drink tea & listen to music every day.***
+*I dream of making a TON of money with computers and then possibly never touching a computer ever again, hehe jk. I prefer cold days, drink tea & listen to music every day.*
 
 Throughout my journey, I've had the privilege of being involved in various endeavors, offering my contributions in diverse capacities. **Some highlights of my involvements include**:
 
