@@ -39,4 +39,4 @@ If you seek an artist who can transform the mundane into the extraordinary, letâ
 
 ***I am available 24/7, don't be shy.***
 
-Email: <a href="mailto:iharsh@skiff.com"> iharsh@skiff.com </a>
+Email: <a href="mailto:hey@iharsh.xyz"> hey@iharsh.xyz </a>
