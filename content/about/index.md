@@ -33,7 +33,7 @@ Throughout my journey, I've had the privilege of being involved in various endea
 
 
 
-<h2> Let’s Connect and Create Tech Masterpieces </h2>
+## Let’s Connect and Create Tech Masterpieces
 
 If you seek an artist who can transform the mundane into the extraordinary, let’s connect our artistic visions. With me, we can create tech masterpieces that evoke wonder, inspire greatness, and leave a legacy of transformative growth. Together, we can paint a vivid picture of success that will stand the test of time.
 
