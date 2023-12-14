@@ -9,7 +9,8 @@
 html {
   color: #232333;
   font-family: 'circular';
-  line-height: 1.5em;
+  line-height: 1.6em;
+  font-size: 16px
 }
 body{
   display: block;
@@ -142,10 +143,10 @@ header {
 }
 
 header .main {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-top: 2em;
 }
 
