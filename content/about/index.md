@@ -24,14 +24,16 @@ My endeavors in social media marketing and community engagement strategies under
 
 *I dream of making a TON of money with computers and then possibly never touching a computer ever again, hehe jk. I prefer cold days, drink tea & listen to music every day.*
 
-Throughout my journey, I've had the privilege of being involved in various endeavors, offering my contributions in diverse capacities. **Some highlights of my involvements include**:
+Throughout my journey, I've had the privilege of being involved in various endeavours, offering my contributions in diverse capacities. **Some highlights of my involvements include**:
 
-* <a href="https://www.quillaudits.com/smart-contract-audit">QuillAudits</a>
-* <a href="https://ximivogueretail.com/">Ximi Vogue</a>
-* <a href="https://airtel.in">Airtel</a>
-* <a href="https://indiefolio.com/">Indiefolio</a>
+<ul>
+  <li><a href="https://www.quillaudits.com/smart-contract-audit">QuillAudits</a></li>
+  <li><a href="https://ximivogueretail.com/">Ximi Vogue</a></li>
+  <li><a href="https://airtel.in">Airtel</a></li>
+  <li><a href="https://indiefolio.com/">Indiefolio</a></li>
+</ul>
 
-##Let’s Connect and Create Tech Masterpieces
+## Let’s Connect and Create Tech Masterpieces
 <p> If you seek an artist who can transform the mundane into the extraordinary, let’s connect our artistic visions. With me, we can create tech masterpieces that evoke wonder, inspire greatness, and leave a legacy of transformative growth. Together, we can paint a vivid picture of success that will stand the test of time. </p>
 
 ***I am available 24/7, don't be shy.***
