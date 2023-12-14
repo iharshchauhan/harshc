@@ -26,10 +26,10 @@ My endeavors in social media marketing and community engagement strategies under
 
 Throughout my journey, I've had the privilege of being involved in various endeavors, offering my contributions in diverse capacities. **Some highlights of my involvements include**:
 
-*<a href="https://www.quillaudits.com/smart-contract-audit">QuillAudits</a>
-**<a href="https://ximivogueretail.com/">Ximi Vogue</a>
-*<a href="https://airtel.in">Airtel</a>
-**<a href="https://indiefolio.com/">Indiefolio</a>
+* <a href="https://www.quillaudits.com/smart-contract-audit">QuillAudits</a>
+* <a href="https://ximivogueretail.com/">Ximi Vogue</a>
+* <a href="https://airtel.in">Airtel</a>
+* <a href="https://indiefolio.com/">Indiefolio</a>
 
 ##Let’s Connect and Create Tech Masterpieces
 <p> If you seek an artist who can transform the mundane into the extraordinary, let’s connect our artistic visions. With me, we can create tech masterpieces that evoke wonder, inspire greatness, and leave a legacy of transformative growth. Together, we can paint a vivid picture of success that will stand the test of time. </p>
