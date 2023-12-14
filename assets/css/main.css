@@ -9,7 +9,7 @@
 html {
   color: #232333;
   font-family: 'circular';
-  font-size: 1.1250em;
+  font-size: 1.250em;
   line-height: 1.5em;
 }
 body{
@@ -29,7 +29,6 @@ body{
 p {
   font-family: 'Bevietnampro Regular', sans-serif;
   line-height: 1.5;
-  font-size: 1.1250em;
 }
 
 hr {
@@ -144,10 +143,10 @@ header {
 }
 
 header .main {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-top: 2em;
 }
 
