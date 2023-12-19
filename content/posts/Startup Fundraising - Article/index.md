@@ -1,7 +1,7 @@
 ---
 title: "Strategic Angel Investment: Shortest Guide to Startup Fundraising"
 description: "How to attract and leverage various types of angel investors for startup success?"
-date: 2023-12-11
+date: 2022-12-11
 tags: [Startup, Fundraising, Angel Investing]
 ---
 
