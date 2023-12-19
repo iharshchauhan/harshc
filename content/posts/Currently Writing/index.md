@@ -24,6 +24,6 @@ In this article, we delve into a comprehensive analysis of key Edtech players po
 | **Company Size** | 2053 (⬆️ 33% YoY)  | Linkedin |
 | **Funding Raised** | $76.5M (Last Raised - Jan 2022) | Crunchbase |
 | **Estimated Valuation**  | $710 mn | VC Circle/Scaler |
-| **Estimated Revenue** | $40M ARR (2021); $120M (Oct 2022) | Scaler |
+| **Estimated Revenue** |  $40M ARR (2021); $120M (Oct 2022) | Scaler |
 | **Target market** | India, USA |  |
 | **Monthly Visits** | 7,654,600 (⬆️ 24.64%)  | SEMRush |
