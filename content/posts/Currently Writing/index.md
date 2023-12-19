@@ -13,17 +13,17 @@ The landscape of education technology (Edtech) has been radically transformed in
 In this article, we delve into a comprehensive analysis of key Edtech players post-COVID, examining critical aspects such as their market positioning, product offerings, technological adoption, and unique selling propositions. This investigation seeks to uncover the dynamism of the Edtech industry and to discern the strategies that have propelled certain companies to the forefront of this competitive domain.
 
 
-##Scaler Academy
+## Scaler Academy
 
-###Basic Analysis
+### Basic Analysis
 
-| Key Metrics |       | Source *(if any)*|
+| **Key Metrics** |       | Source *(if any)*|
 | -------- | -------- | -------- |
-|  Parent Name   | Interview Bit   |    |
-| Founded    | 2019   | Cell 4   |
-| Company Size | 2053 (⬆️ 33% YoY)  | Linkedin |
-| Funding Raised | $76.5M (Last Raised - Jan 2022) | Crunchbase |
-| Estimated Valuation  | $710 mn | VC Circle/Scaler |
-| Estimated Revenue | $40M ARR (2021); $120M (Oct 2022) | Scaler |
-| Target market | India, USA |  |
-| Monthly Visits | 7,654,600 (⬆️ 24.64%)  | SEMRush |
+|  **Parent Name**   | Interview Bit   |    |
+| **Founded**    | 2019   | |
+| **Company Size** | 2053 (⬆️ 33% YoY)  | Linkedin |
+| **Funding Raised** | $76.5M (Last Raised - Jan 2022) | Crunchbase |
+| **Estimated Valuation**  | $710 mn | VC Circle/Scaler |
+| **Estimated Revenue** | $40M ARR (2021); $120M (Oct 2022) | Scaler |
+| **Target market** | India, USA |  |
+| **Monthly Visits** | 7,654,600 (⬆️ 24.64%)  | SEMRush |
