@@ -128,36 +128,37 @@ header .main {
   font-size: 1.8rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 1.3rem;
-  margin-top: 2em;
-}
-
+/* Adjusted font sizes for h2, h3, h4, h5, h6 */
 h1 {
-  color: #000; /* Pure black */
-}
-h2 {
-  color: #111; /* A very dark shade of black */
-}
-h3 {
-  color: #222; /* Slightly lighter than h2 */
-}
-h4 {
-  color: #333; /* Slightly lighter than h3 */
-}
-h5 {
-  color: #444; /* Slightly lighter than h4 */
-}
-h6 {
-  color: #555; /* Slightly lighter than h5; darkest gray */
+  font-size: 1.8rem; /* unchanged */
 }
 
-h1::before { color: #000; content: '# '; }
-h2::before { color: #111; content: '## '; }
-h3::before { color: #222; content: '### '; }
-h4::before { color: #333; content: '#### '; }
-h5::before { color: #444; content: '##### '; }
-h6::before { color: #555; content: '###### '; }
+h2 {
+  font-size: 1.5rem; /* smaller than h1 */
+}
+
+h3 {
+  font-size: 1.3rem; /* smaller than h2 */
+}
+
+h4 {
+  font-size: 1.2rem; /* smaller than h3 */
+}
+
+h5 {
+  font-size: 1.1rem; /* smaller than h4 */
+}
+
+h6 {
+  font-size: 1rem; /* smaller than h5 */
+}
+
+h1::before { color: var(--maincolor); content: '# '; }
+h2::before { color: var(--maincolor); content: '## '; }
+h3::before { color: var(--maincolor); content: '### '; }
+h4::before { color: var(--maincolor); content: '#### '; }
+h5::before { color: var(--maincolor); content: '##### '; }
+h6::before { color: var(--maincolor); content: '###### '; }
 
 .meta {
   color: #999;
@@ -243,22 +244,6 @@ svg {
 .highlight {
   position: relative;
   -webkit-overflow-scrolling: touch;
-}
-.highlight pre code[class*="language-"] {
-  -webkit-overflow-scrolling: touch;
-}
-.highlight pre code[class*="language-"]::before {
-  background: black;
-  border-radius: 0 0 0.25rem 0.25rem;
-  color: white;
-  font-size: 12px;
-  letter-spacing: 0.025rem;
-  padding: 0.1rem 0.5rem;
-  position: absolute;
-  right: 1rem;
-  text-align: right;
-  text-transform: uppercase;
-  top: 0;
 }
 /* Additional language-specific code styles omitted for brevity */
 /* table */
