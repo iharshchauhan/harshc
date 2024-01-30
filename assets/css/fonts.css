@@ -58,3 +58,17 @@
        url('../fonts/circular.woff') format('woff'),
        url('../fonts/circular.ttf') format('truetype');
 }
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-regular.eot'); 
+  src: local('Inter Regular'), local('Inter-Regular'),
+       url('../fonts/inter-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/inter-regular.woff2') format('woff2'), 
+       url('../fonts/inter-regular.woff') format('woff'), 
+       url('../fonts/inter-regular.ttf') format('truetype'), 
+       url('../fonts/inter-regular.svg#Inter') format('svg'); 
+}
