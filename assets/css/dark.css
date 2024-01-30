@@ -174,3 +174,10 @@ a:hover {
   background: royalblue;
   color: whitesmoke ;
 }
+
+}
+
+table td{
+  padding: 6px 13px;
+  border: 1px solid #DB0030;
+}
