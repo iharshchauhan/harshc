@@ -38,7 +38,7 @@ url = 'https://instagram.com/iharshchauhan/'
 
 [[params.social]]
 name = 'Spotify'
-icon = 'spotify'
+icon = 'music'
 url = 'https://open.spotify.com/playlist/6rhg71awO0tB2GIunqOxAg?si=b1cb737056354412'
 
 # Main menu Items
