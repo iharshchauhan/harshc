@@ -341,11 +341,11 @@ table {
 
 table th{
   padding: 6px 13px;
-  border: 1px solid --maincolor;
+  border: 1px solid #014C00;
   font-size: large;
 }
 
 table td{
   padding: 6px 13px;
-  border: 1px solid #014C00;
+  border: 1px solid --maincolor;
 }
