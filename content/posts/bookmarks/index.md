@@ -7,7 +7,7 @@ tags: [Curated Articles]
 
 ### Readings that changed my worldview
 
-| |  |
+| Article | URL |
 | --- | --- |
 | Facts don't change our mind | [James Clear](https://jamesclear.com/why-facts-dont-change-minds) |
 | Psychology is pseudo-science | [Psychology's Replication Crisis](https://www.theatlantic.com/science/archive/2018/11/psychologys-replication-crisis-real/576223/) |
@@ -29,7 +29,7 @@ tags: [Curated Articles]
 
 ### Readings that improved my way of thinking
 
-| |  |
+| Article | URL |
 | --- | --- |
 | Daniel Dennett’s Most Useful Critical Thinking Tools | [Daniel Dennett’s Most Useful Critical Thinking Tools](https://fs.blog/2016/07/dan-dannetts-thinking-tools/) |
 | Additive Solutions vs Subtractive Solutions  | [Additive Solutions vs Subtractive Solutions](https://www.scientificamerican.com/article/our-brain-typically-overlooks-this-brilliant-problem-solving-strategy/) |
