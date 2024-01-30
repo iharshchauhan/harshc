@@ -128,30 +128,36 @@ header .main {
   font-size: 1.8rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1.3rem;
+  margin-top: 2em;
+}
+
 h1 {
-  font-size: 1.8rem; /* example size for h1 */
+  color: #000; /* Pure black */
 }
 h2 {
-  font-size: 1.6rem; /* slightly smaller than h1 */
+  color: #111; /* A very dark shade of black */
 }
 h3 {
-  font-size: 1.4rem; /* slightly smaller than h2 */
+  color: #222; /* Slightly lighter than h2 */
 }
 h4 {
-  font-size: 1.2rem; /* slightly smaller than h3 */
+  color: #333; /* Slightly lighter than h3 */
 }
 h5 {
-  font-size: 1.1rem; /* slightly smaller than h4 */
+  color: #444; /* Slightly lighter than h4 */
 }
 h6 {
-  font-size: 1rem; /* smallest, slightly smaller than h5 */
+  color: #555; /* Slightly lighter than h5; darkest gray */
 }
-h1::before { color: var(--maincolor); content: '# '; }
-h2::before { color: var(--maincolor); content: '## '; }
-h3::before { color: var(--maincolor); content: '### '; }
-h4::before { color: var(--maincolor); content: '#### '; }
-h5::before { color: var(--maincolor); content: '##### '; }
-h6::before { color: var(--maincolor); content: '###### '; }
+
+h1::before { color: #000; content: '# '; }
+h2::before { color: #111; content: '## '; }
+h3::before { color: #222; content: '### '; }
+h4::before { color: #333; content: '#### '; }
+h5::before { color: #444; content: '##### '; }
+h6::before { color: #555; content: '###### '; }
 
 .meta {
   color: #999;
