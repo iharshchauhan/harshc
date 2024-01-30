@@ -5,7 +5,7 @@ description: "These are links that I find myself sharing with other people the m
 tags: [Curated Articles]
 ---
 
-## Readings that changed my worldview
+### Readings that changed my worldview
 
 | Article| URL |
 | --- | --- |
@@ -22,7 +22,12 @@ tags: [Curated Articles]
 | Hypocrisy of Elites | [Hypocrisy of Elites](https://eriktorenberg.substack.com/p/the-hypocrisy-of-elites) |
 
 
-## Readings that improved my way of thinking
+
+
+
+
+
+### Readings that improved my way of thinking
 
 | Article | URL |
 | --- | --- |
