@@ -7,57 +7,16 @@ tags: [Curated Articles]
 
 ## Readings that changed my worldview
 
-- [Facts don't change our mind](https://jamesclear.com/why-facts-dont-change-minds)—James Clear
-    
-    "Convincing someone to change their mind is really the process of convincing them to change their tribes" 
-    
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/323504b0-9eb1-484e-8ba1-ad54033a3608/Screenshot_(14).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/323504b0-9eb1-484e-8ba1-ad54033a3608/Screenshot_(14).png)
-    
-- Psychology is pseudo-science
-    
-    [Psychology's Replication Crisis](https://www.theatlantic.com/science/archive/2018/11/psychologys-replication-crisis-real/576223/)
-    
-- I assume I'm below average
-    
-    [I assume I'm below average](https://sive.rs/below-average): short essay by derek sivers
-    
-- The days are long but the decades are short, by Sam Altaman
-    
-    [The days are long but the decades are short](https://blog.samaltman.com/the-days-are-long-but-the-decades-are-short)
-    
-- [Ideas that changed my mind](https://www.collaborativefund.com/blog/ideas-that-changed-my-life/): Morgan Housel
-    
-    
-- The opportunity of the laggards: Seth Godin
-    
-    [The opportunity of the laggards](https://seths.blog/2021/02/the-opportunity-of-the-laggards/)
-    
-- Smart Heuristics
-    
-    [Smart Heuristics](https://www.edge.org/conversation/gerd_gigerenzer-smart-heuristics)
-    
-- Cynefin
-    
-    The reality is made up of four systems:
-    
-    Predictable
-    
-    Repeatable
-    
-    Ordered
-    
-    Unpredictable
-    
-    Most people exist in an unordered system— not knowing which system things belong to.
-    
-- The Tyranny of Time
-    
-    [The Tyranny of Time](https://www.noemamag.com/the-tyranny-of-time/)
-    
-- Red Light Therapy
-    
-    [Red Light Therapy](https://harpers.org/archive/2016/05/red-light-therapy/)
-    
-- Hypocrisy of Elites
-    
-    [Hypocrisy of Elites](https://eriktorenberg.substack.com/p/the-hypocrisy-of-elites)
+| Heading | Article URL |
+| --- | --- |
+| Facts don't change our mind | [James Clear](https://jamesclear.com/why-facts-dont-change-minds) |
+| Psychology is pseudo-science | [Psychology's Replication Crisis](https://www.theatlantic.com/science/archive/2018/11/psychologys-replication-crisis-real/576223/) |
+| I assume I'm below average | [I assume I'm below average](https://sive.rs/below-average): short essay by Derek Sivers |
+| The days are long but the decades are short, by Sam Altaman | [The days are long but the decades are short](https://blog.samaltman.com/the-days-are-long-but-the-decades-are-short) |
+| Ideas that changed my mind | [Morgan Housel](https://www.collaborativefund.com/blog/ideas-that-changed-my-life/) |
+| The opportunity of the laggards: Seth Godin | [The opportunity of the laggards](https://seths.blog/2021/02/the-opportunity-of-the-laggards/) |
+| Smart Heuristics | [Gerd Gigerenzer](https://www.edge.org/conversation/gerd_gigerenzer-smart-heuristics) |
+| Cynefin | - |
+| The Tyranny of Time | [The Tyranny of Time](https://www.noemamag.com/the-tyranny-of-time/) |
+| Red Light Therapy | [Red Light Therapy](https://harpers.org/archive/2016/05/red-light-therapy/) |
+| Hypocrisy of Elites | [Hypocrisy of Elites](https://eriktorenberg.substack.com/p/the-hypocrisy-of-elites) |
