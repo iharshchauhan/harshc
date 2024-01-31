@@ -55,8 +55,8 @@ jobs:
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Build TinaCMS
           env:
-    TINA_PUBLIC_CLIENT_ID: ${{ secrets.6891bc92-183e-4adb-a3a7-787bbb6baada }}
-    TINA_TOKEN: ${{ secrets.1ea5d8458dbc2162c5d50c2b35c26f6d1d7b2e90 }}
+            TINA_PUBLIC_CLIENT_ID: ${{ secrets.6891bc92-183e-4adb-a3a7-787bbb6baada }}
+            TINA_TOKEN: ${{ secrets.1ea5d8458dbc2162c5d50c2b35c26f6d1d7b2e90 }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
