@@ -2,6 +2,7 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'harshc_'
 theme="archie"
+googleAnalytics = "G-FWMFRC7NTP"
 copyright = '© Harsh Chauhan'
 
 # Code Highlight
