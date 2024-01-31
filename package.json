@@ -1,0 +1,19 @@
+{
+  "name": "harshc",
+  "version": "1.0.0",
+  "description": "Welcome to my personal website! <br> This website was built with a lot of hard work, a dash of creativity, and of course, a healthy amount of caffeine-fueled coding sessions. \r <br>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tinacms": "^1.5.28"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^1.5.39",
+    "@types/node": "^20.11.13"
+  }
+}
