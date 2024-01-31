@@ -143,15 +143,14 @@ header {
   
 }
 
-header nav {
-  display: flex;
-  justify-content: space-between;
-  margin: 1em 0;
-}
-
 header nav a {
   margin-right: 10px;
 }
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
 
 
 header .main {
