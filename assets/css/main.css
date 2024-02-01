@@ -28,7 +28,8 @@ body{
 
 p {
   font-family: 'aeonik', sans-serif;
-  line-height: 1.9;
+  line-height: 1.7;
+  font-size: 1.1em
 }
 
 hr {
