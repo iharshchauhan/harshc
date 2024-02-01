@@ -17,7 +17,14 @@
 				
 				<section>
 					<p>Hey, and welcome to my corner of the web! I'm a Growth/Product enthusiast and amateur human, exploring and building the world and its web. Find out more about me at <a href="/about">/about</a>.
-			<br> <br> Join me as I document interesting things for my future self and create engaging content. I plan to be more active through my writings here:</p>
+			<br> Join me as I document interesting things for my future self and create engaging content. I plan to be more active through my writings here:</p>
+					[[params.social]]
+                                          name = 'GitHub'
+                                          icon = 'github'
+                                          url = 'https://github.com/iharshchauhan'
+
+
+
 					
 					{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 					{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
