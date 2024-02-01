@@ -72,3 +72,10 @@
        url('../fonts/inter-regular.ttf') format('truetype'), 
        url('../fonts/inter-regular.svg#Inter') format('svg'); 
 }
+
+@font-face {
+    font-family: aeonik;
+    src: url("..assets/css/custom fonts/Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
