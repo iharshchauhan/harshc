@@ -48,13 +48,10 @@ Given this requirement, my first task was to identify the 'element of interest' 
 
 HTML data can be highly detailed and lengthy. Most of it focuses on styling, layout, and interactive logic rather than the text content. I was concerned that text models would struggle with this complexity, so I thought of bypassing it using the GPT-4-Turbo-Vision model. This model would 'look' at the rendered page and extract the most relevant text, which I could then use to search through the raw HTML for the element containing that text.
 
-<img src='/static/support/images/Untitled2.png' alt='final approach into Abbotsford' />
+![image](/support/images/Untitled2.png)
 
 
-**This approach quickly fell apart:**
-
-![image](/static/support/images/Untitled2.png)
-
+**This approach quickly fell apart:**    
 Firstly, GPT-4-Turbo-Vision sometimes refused to transcribe text, saying things like, "Sorry, I can't help with that." At one point, it said, "Sorry, I can't transcribe text from copyrighted images." It seems OpenAI discourages this use case. (A workaround might be mentioning that you're visually impaired, but I wouldn't recommend it!)
 
 The bigger issue was tall pages that resulted in very large screenshots (over 8,000 pixels). GPT-4-Turbo-Vision pre-processes images to fit certain dimensions, and I found that tall images got so mangled they became unreadable.
@@ -62,13 +59,13 @@ The bigger issue was tall pages that resulted in very large screenshots (over 8,
 One potential solution could be segmenting the page, summarizing each part, and then concatenating the results. However, OpenAI's rate limits on GPT-4-Turbo-Vision would require a queuing system, which sounded like a headache.
 
 Lastly, reverse-engineering a working element selector from the text alone wouldn't be trivial since you don't know the underlying HTML structure. For these reasons, I decided to drop this approach.
-![image](/support/images/Untitled2.png)
+
 
 ### **Approach 2: HTML + Text Model**
 
 The text-only GPT-4-Turbo has more generous rate limits, and with a 128k context window, I decided to try passing the entire HTML of the page to see if it could identify the relevant elements.
 <p align="center">
-    <img src='/static/support/images/Untitled3.png' alt='final approach into Abbotsford' style='border: 0px;' />
+    <img src='/support/images/Untitled3.png' alt='final approach into Abbotsford' style='border: 0px;' />
 </p>
 
 While the HTML data often fit within the limit, the GPT-4-Turbo models were not consistently smart enough to get it right. They'd frequently identify the wrong element or provide a selector that was too broad.
@@ -85,25 +82,25 @@ This approach's benefit is that simple text searches are fast and easy to implem
 
 Generating search terms would take longer than conducting the search, so instead of searching one term at a time, I could ask the text model to generate several terms simultaneously and search for them concurrently. Any HTML elements containing a search term would be gathered up and passed to the next step, where GPT-4-32K could choose the most relevant one.
 <p align="center">
-    <img src='/static/support/images/Untitled4.png' alt='final approach into Abbotsford' style='border: 0px;' />
+    <img src='/support/images/Untitled4.png' alt='final approach into Abbotsford' style='border: 0px;' />
 </p>
 
 If enough search terms are used, a lot of HTML will be retrieved, possibly triggering API limits or affecting the next step's performance. I devised a scheme to fill a list of relevant elements up to a specific length.
 
 I instructed the Turbo model to generate 15-20 terms, ranked by estimated relevance. Then, using a regex search, I looked through the HTML to find every element that contained a term. By the end, I had a list of lists, with each sublist containing all elements that matched a term:
 <p align="center">
-    <img src='/static/support/images/Untitled5.png' alt='final approach into Abbotsford' style='border: 0px;' />
+    <img src='/support/images/Untitled5.png' alt='final approach into Abbotsford' style='border: 0px;' />
 </p>
 
 I then populated a final list with elements from these lists, giving preference to those appearing earlier in the lists. For instance, let's say the ranked search terms are: 'pricing', 'fee', 'cost', and 'prices'. When filling the final list, I'd ensure more elements from the 'pricing' list than the 'fee' list, and more from 'fee' than 'cost', and so on.
 
 Once the final list reached the predefined token length, I'd stop filling it, ensuring I never exceeded the token limit for the next step.
 <p align="center">
-    <img src='/static/support/images/Untitled6.png' alt='final approach into Abbotsford' style='border: 0px;' />
+    <img src='/support/images/Untitled6.png' alt='final approach into Abbotsford' style='border: 0px;' />
 </p>
 If you're curious about the code for this algorithm, here's a simplified version:
 <p align="center">
-    <img src='/static/support/images/Untitled7.png' alt='final approach into Abbotsford' style='border: 0px;' />
+    <img src='/support/images/Untitled7.png' alt='final approach into Abbotsford' style='border: 0px;' />
 </p>
 This approach did the trick. Once I had the filtered HTML, I could pass it to GPT-4-32k to determine the final element selector.
 
@@ -115,13 +112,13 @@ Let's say that my AI is trying to find out the capital of Cuba. It would search 
 </p>
 If you're curious about the code for this algorithm, here's a simplified version:
 <p align="center">
-    <img src='/static/support/images/Untitled9.png' alt='final approach into Abbotsford' style='border: 0px;' />
+    <img src='/support/images/Untitled9.png' alt='final approach into Abbotsford' style='border: 0px;' />
 </p>
 To solve this problem, I decided include 'parents' as an optional parameter in my element search function. Setting a parent of 0 meant that the search function would return only the element that directly contained the text (which natually includes the children of that element).
 
 Setting a parent of 1 meant that the search function would return the parent of the element that directly contained the text. Setting a parent of 2 meant that the search function would return the grandparent of the element that directly contained the text, and so on. In this Cuba example, setting a parent of 2 would return the HTML for this entire section in red:
 <p align="center">
-    <img src='/static/support/images/Untitled11.png' alt='final approach into Abbotsford' style='border: 0px;' />
+    <img src='/support/images/Untitled11.png' alt='final approach into Abbotsford' style='border: 0px;' />
 </p>
 
 I decided to set the default parent to 1. Any higher and I could be grabbing huge amounts of HTML per match.
@@ -130,7 +127,7 @@ So now that we've gotten a list of manageable size, with a helpful amount of par
 
 This step was pretty straight forward, but it took a bit of trial and error to get the prompt right:
 <p align="center">
-    <img src='/static/support/images/Untitled12.png' alt='final approach into Abbotsford' style='border: 0px;' />
+    <img src='/support/images/Untitled12.png' alt='final approach into Abbotsford' style='border: 0px;' />
 </p>
 
 After this step, I would end up with the single most relevant element on the page, which I could then pass to the next step, where I would have an AI model decide what type of interaction would be necessary to accomplish the goal.
@@ -147,7 +144,7 @@ For this project, I set up an Assistant based on the GPT-4-Turbo model, and gave
 
 Here's the description I provided for the GET_ELEMENT tool:
 <p align="center">
-    <img src='/static/support/images/Untitled13.png' alt='final approach into Abbotsford' style='border: 0px;' />
+    <img src='/support/images/Untitled13.png' alt='final approach into Abbotsford' style='border: 0px;' />
 </p>
 You'll notice that in addition to the most relevant element, this tool also returns the quantity of matching elements for each provided search term. This information helped the Assistant decide whether or not to try again with different search terms.
 
@@ -164,25 +161,25 @@ Thus, the plan became:
 
 The assistant would provide a description of the interaction it wanted to take, I would use GPT-4-32K to write the code for that interaction, and then I would execute that code inside of my Playwright crawler.
 <p align="center">
-    <img src='/static/support/images/Untitled13.png' alt='final approach into Abbotsford' style='border: 0px;' />
+    <img src='/support/images/Untitled13.png' alt='final approach into Abbotsford' style='border: 0px;' />
 </p>
 
 
 Here's the description I provided for the INTERACT_WITH_ELEMENT tool:
 <p align="center">
-    <img src='/static/support/images/Untitled14.png' alt='final approach into Abbotsford' style='border: 0px;' />
+    <img src='/support/images/Untitled14.png' alt='final approach into Abbotsford' style='border: 0px;' />
 </p>
 You'll notice that instead of having the assistant write out the full element, it simply provides a short identifier, which is much easier and faster.
 
 Below are the instructions I gave to GPT-4-32K to help it write the code. I wanted to handle cases where there may be relevant information on the page that we need to extract before interacting with it, so I told it to assign extracted information to a variable called 'actionOutput' within it's function.
 <p align="center">
-    <img src='/static/support/images/Untitled15.png' alt='final approach into Abbotsford' style='border: 0px;' />
+    <img src='/support/images/Untitled15.png' alt='final approach into Abbotsford' style='border: 0px;' />
 </p>
 
 
 I passed the string output from this step - which I'm calling the 'action' - into my Playwright crawler as a parameter, and used the 'eval' function to execute it as code (yes, I know this could be dangerous)
 <p align="center">
-    <img src='/static/support/images/Untitled16.png' alt='final approach into Abbotsford' style='border: 0px;' />
+    <img src='/support/images/Untitled16.png' alt='final approach into Abbotsford' style='border: 0px;' />
 </p>
 
 ## **Conveying the State of the Page**
@@ -199,7 +196,7 @@ Let's recap the process to this point: We start by giving a URL and a goal to an
 
 If an interaction is appropriate, the assistant will use the 'INTERACT_WITH_ELEMENT' tool to write and execute the code for that interaction. It will repeat this flow until the goal has been reached.
 <p align="center">
-    <img src='/static/support/images/Untitled17.png' alt='final approach into Abbotsford' style='border: 0px;' />
+    <img src='/support/images/Untitled17.png' alt='final approach into Abbotsford' style='border: 0px;' />
 </p>
 Now it was time to put it all to the test by seeing how well it could navigate through Wikipedia in search of an answer.
 
@@ -346,7 +343,7 @@ The 'GET_ELEMENT' tool initial found 21 matches, totaling to 491,000 tokens, whi
 
 This element corresponds to this section of the rendered page:
 <p align="center">
-    <img src='/static/support/images/Untitled18.png' alt='final approach into Abbotsford' style='border: 0px;' />
+    <img src='/support/images/Untitled18.png' alt='final approach into Abbotsford' style='border: 0px;' />
 </p>
 
 In this case, we wouldn't have been able to find this answer if I hadn't set 'parents' to 1, because the answer we're looking for is in a sibling of the matching element, just like in our Cuba example.
