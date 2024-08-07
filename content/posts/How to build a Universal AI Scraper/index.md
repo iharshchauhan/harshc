@@ -62,6 +62,7 @@ The bigger issue was tall pages that resulted in very large screenshots (over 8,
 One potential solution could be segmenting the page, summarizing each part, and then concatenating the results. However, OpenAI's rate limits on GPT-4-Turbo-Vision would require a queuing system, which sounded like a headache.
 
 Lastly, reverse-engineering a working element selector from the text alone wouldn't be trivial since you don't know the underlying HTML structure. For these reasons, I decided to drop this approach.
+![image](/support/images/Untitled2.png)
 
 ### **Approach 2: HTML + Text Model**
 
