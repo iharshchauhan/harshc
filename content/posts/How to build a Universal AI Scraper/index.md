@@ -83,7 +83,7 @@ Generating search terms would take longer than conducting the search, so instead
 If enough search terms are used, a lot of HTML will be retrieved, possibly triggering API limits or affecting the next step's performance. I devised a scheme to fill a list of relevant elements up to a specific length.
 
 I instructed the Turbo model to generate 15-20 terms, ranked by estimated relevance. Then, using a regex search, I looked through the HTML to find every element that contained a term. By the end, I had a list of lists, with each sublist containing all elements that matched a term:
-![image](/support/images/Untitled5.png)( width="75%")
+![image](/support/images/Untitled5.png)
 
 I then populated a final list with elements from these lists, giving preference to those appearing earlier in the lists. For instance, let's say the ranked search terms are: 'pricing', 'fee', 'cost', and 'prices'. When filling the final list, I'd ensure more elements from the 'pricing' list than the 'fee' list, and more from 'fee' than 'cost', and so on.
 
