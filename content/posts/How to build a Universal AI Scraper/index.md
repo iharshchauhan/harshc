@@ -1,9 +1,12 @@
 ---
 title: "How to build a Universal AI Scraper"
-date: 2024-06-18
-description: "Lately, I've dived into the world of web scrapers, and with the rapid developments in AI, I thought it would be fascinating to attempt creating a 'universal' scraper."
-tags: [Artificial Intelligence], [Deep-dive Analysis]
+date: 2024-07-18
+description: "Lately, I've dived into the world of web scrapers, and with the rapid developments in AI, I thought it would be fascinating to attempt creating a universal scraper."
+tags: [Startup, Deep-Dive Analysis]
 ---
+
+
+
 Lately, I've dived into the world of web scrapers, and with the rapid developments in AI, I thought it would be fascinating to attempt creating a 'universal' scraper. This would be one that can navigate the web step by step until it finds exactly what it's looking for. It's a work in progress, but I wanted to share what I've achieved so far.
 
 ### **Specifications**
