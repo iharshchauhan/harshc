@@ -48,12 +48,12 @@ Given this requirement, my first task was to identify the 'element of interest' 
 
 HTML data can be highly detailed and lengthy. Most of it focuses on styling, layout, and interactive logic rather than the text content. I was concerned that text models would struggle with this complexity, so I thought of bypassing it using the GPT-4-Turbo-Vision model. This model would 'look' at the rendered page and extract the most relevant text, which I could then use to search through the raw HTML for the element containing that text.
 
-<img src='/static/support/images/Untitled2.png' alt='final approach into Abbotsford' />
+<img src='/support/images/Untitled2.png' alt='final approach into Abbotsford' />
 
 
 **This approach quickly fell apart:**
 
-![image](/static/support/images/Untitled2.png)
+![image](/support/images/Untitled2.png)
 
 Firstly, GPT-4-Turbo-Vision sometimes refused to transcribe text, saying things like, "Sorry, I can't help with that." At one point, it said, "Sorry, I can't transcribe text from copyrighted images." It seems OpenAI discourages this use case. (A workaround might be mentioning that you're visually impaired, but I wouldn't recommend it!)
 
