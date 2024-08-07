@@ -2,7 +2,7 @@
 title: "How to build a Universal AI Scraper"
 date: 2024-07-18
 description: "Lately, I've dived into the world of web scrapers, and with the rapid developments in AI, I thought it would be fascinating to attempt creating a universal scraper."
-tags: [Startup, Deep-Dive Analysis]
+tags: [Artifical Intelligence, Deep-Dive Analysis]
 ---
 
 
