@@ -47,6 +47,16 @@ Given this requirement, my first task was to identify the 'element of interest' 
 ### **Approach 1: Screenshot + Vision Model:**
 
 HTML data can be highly detailed and lengthy. Most of it focuses on styling, layout, and interactive logic rather than the text content. I was concerned that text models would struggle with this complexity, so I thought of bypassing it using the GPT-4-Turbo-Vision model. This model would 'look' at the rendered page and extract the most relevant text, which I could then use to search through the raw HTML for the element containing that text.
+
+{{< rawhtml >}}
+<p align="center">
+    <img src='/static/support/images/Untitled2.png' alt='final approach into Abbotsford' style='border: 0px;' width='24%' />
+    <img src='/img/alaska/IMG_8900.jpeg' alt='Abbotsford' style='border: 0px;' width='24%' />
+    <img src='/img/alaska/IMG_8905.jpeg' alt='Mountains between Abbotsford and Kamloops' style='border: 0px;' width='24%' />
+    <img src='/img/alaska/IMG_8920.jpeg' alt='tiedown at Kamloops' style='border: 0px;' width='24%' />
+</p>
+{{< /rawhtml >}}
+
 [![Get element](static/support/images/Untitled (2).png)]
 h
-{{< figure src="static/support/images/Untitled (2).png" title="GET_ELEMENT" >}}
+{{< figure src="static/support/images/Untitled2.png" title="GET_ELEMENT" >}}
