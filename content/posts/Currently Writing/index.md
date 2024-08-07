@@ -1,5 +1,5 @@
 ---
-title: "Reshaping Learning: The Edtech Revolution in the Post-COVID Era"
+title: "[WIP] Reshaping Learning: The Edtech Revolution in the Post-COVID Era"
 date: 2023-06-18
 description: "The landscape of education technology (Edtech) has been radically transformed in the wake of the COVID-19 pandemic, with seismic shifts in how educational content is delivered and consumed. As traditional learning environments were disrupted, there arose an unprecedented reliance on digital platforms, catalyzing a period of intense growth and innovation in the Edtech sector."
 tags: [Startup, Deep-Dive Analysis]
@@ -84,8 +84,8 @@ In this article, we delve into a comprehensive analysis of key Edtech players po
 ####List of Products
 | Name | Date | Present | Product offerings | Features | Eligibility  | Duration | Fee | No. of instructors & faculty |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Scaler Academy | - | Ongoing | Scaler Academy looks at accelerating the careers of early-tenure professionals | Untitled (https://www.notion.so/27e7a55afba24dbea8549ae853b7120d?pvs=21)  | 0-3 years of work experience | 9-11 Months | INR 2.50 Lakh (Source: https://collegedunia.com/institute/8018-scaler-by-interviewbit-bangalore) |  |
-| Scaler Edge | July 2020 | Ongoing (Unlisted on main website; no new batches) | Scaler Edge offers industry exposure at an early stage to university students to help boost their employability and cater to industry requisites sought in freshers. | Untitled (https://www.notion.so/eb49e5963c964b1fab5074f2be2a3620?pvs=21)  | Anyone can join | 2-years | Module 1 - Rs. 39,999
+| Scaler Academy | - | Ongoing | Scaler Academy looks at accelerating the careers of early-tenure professionals | WIP  | 0-3 years of work experience | 9-11 Months | INR 2.50 Lakh (Source: https://collegedunia.com/institute/8018-scaler-by-interviewbit-bangalore) |  |
+| Scaler Edge | July 2020 | Ongoing (Unlisted on main website; no new batches) | Scaler Edge offers industry exposure at an early stage to university students to help boost their employability and cater to industry requisites sought in freshers. |  WIP  | Anyone can join | 2-years | Module 1 - Rs. 39,999
 
 Module 1 & 2 - Rs. 59,999
 (https://web.archive.org/web/20220123191709/https://www.scaler.com/edge/#payment |  |
