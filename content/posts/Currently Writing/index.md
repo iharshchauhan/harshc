@@ -1,5 +1,5 @@
 ---
-title: "[WIP] Reshaping Learning: The Edtech Revolution in the Post-COVID Era"
+title: "(WIP) Reshaping Learning: The Edtech Revolution in the Post-COVID Era"
 date: 2023-06-18
 description: "The landscape of education technology (Edtech) has been radically transformed in the wake of the COVID-19 pandemic, with seismic shifts in how educational content is delivered and consumed. As traditional learning environments were disrupted, there arose an unprecedented reliance on digital platforms, catalyzing a period of intense growth and innovation in the Edtech sector."
 tags: [Startup, Deep-Dive Analysis]
