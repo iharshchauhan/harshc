@@ -4,7 +4,9 @@ date: 2023-12-01
 description: "About Harsh Chauhan"
 ---
 
-Hi, I’m Harsh, your friendly neighbourhood Product & Growth Generalist with 5+ years of juggling **SaaS, e-commerce, AI, Space Tech, and Web3** *(if it’s futuristic, I’m into it)*. I eat data for breakfast, and nope, my favorite app isn’t Instagram or Twitter—it’s ChatGPT. *I'm basically Jon Snow—I know nothing… except how to get shit done! Even if I have no clue what’s going on, give me a minute, and I’ll figure it out.* 
+Hi, I’m Harsh, your friendly neighbourhood Product & Growth Generalist with 5+ years of juggling **SaaS, e-commerce, AI, Space Tech, and Web3** *(if it’s futuristic, I’m into it)*. 
+I eat data for breakfast, and nope, my favorite app isn’t Instagram or Twitter; it’s ChatGPT. 
+***I'm basically Jon Snow, I know nothing… except how to get shit done! Even if I have no clue what’s going on, give me a minute, and I’ll figure it out.*** 
 <br>I specialize in scaling innovative products faster than you can say 'disrupt the market.' <br/> 
 
 **My journey?** A wild ride through multi-channel product dev, marketing magic, and just enough chaos to keep things fun.
