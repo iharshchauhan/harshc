@@ -4,12 +4,15 @@ date: 2023-12-01
 description: "About Harsh Chauhan"
 ---
 
-A dynamic and visionary **Product & Growth Generalist** with over five years of hands-on expertise, I, Harsh, specialize in the meticulous craft of scaling innovative products within the vibrant industries of **SaaS**, **e-commerce**, **Artificial Intelligence**, **Space Tech** and the nascent **Web3** sector. My enriched professional journey is a testament to my deep-seated knowledge in driving multi-channel product development and marketing strategies that spark **user engagement, enhance brand visibility, and bolster sustainable growth.**
+Hi, I’m Harsh, your friendly neighbourhood Product & Growth Generalist with 5+ years of juggling **SaaS, e-commerce, AI, Space Tech, and Web3** *(if it’s futuristic, I’m into it)*. I eat data for breakfast, and nope, my favorite app isn’t Instagram or Twitter—it’s ChatGPT. *I'm basically Jon Snow—I know nothing… except how to get shit done! Even if I have no clue what’s going on, give me a minute, and I’ll figure it out.* 
+<br>I specialize in scaling innovative products faster than you can say 'disrupt the market.' <br/> 
+
+**My journey?** A wild ride through multi-channel product dev, marketing magic, and just enough chaos to keep things fun.
 
 
-*I'm always left spellbound by the remarkable talent out there and the amazing innovations people come up with. If our paths have crossed, rest assured, I've probably taken a tour of your website and thought to myself, 'Now that's some top-notch work!' And, yes, I'm forever on the lookout to expand my library – my reading list is forever growing.*
+*I'm constantly blown away by the insane talent out there and the genius innovations people come up with. If our paths have crossed, there's a 99% chance I’ve stalked your website and thought, 'Whoa, now that's some next-level stuff!' And, yep, my reading list is like a black hole: it keeps expanding, and there's no escape. But hey, I’m always down to add more to the pile!*
 
-*I dream of making a TON of money with computers and then possibly never touching a computer ever again, hehe jk. I prefer cold days, drink tea & listen to music every day.*
+***I dream of making a TON of money with computers and then, maybe, never touching one again… just kidding (or am I?). I’m all about cold days, a hot cup of coffee, and music on repeat. Oh, and when I'm not plotting my tech empire, you'll find me deep into movies, soaking up nature, or overanalyzing human behaviour like it’s my side gig. Basically, I'm into the good stuff in life, with or without a computer!***
 
 Throughout my journey, I've had the privilege of being involved in various endeavours, offering my contributions in diverse capacities. *Some highlights of my involvements include*:
  
@@ -26,6 +29,7 @@ Throughout my journey, I've had the privilege of being involved in various endea
 *    [Jovian](https://jovian.com/)
 *    [Bezit](https://bezit.co/)
 *    [PierSight](https://piersight.space/)
+*    [Atlas](https://atlas.so?)
    
 ## Let’s Connect and Create Tech Masterpieces
 
