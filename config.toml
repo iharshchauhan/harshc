@@ -46,7 +46,4 @@ name = "Tags"
 url = "/tags"
 weight = 4
 
-disableKinds = ['tags', 'tag1']
-disableKinds = ['tags', 'tag2']
-disableKinds = ['tags', 'tag3']
 
