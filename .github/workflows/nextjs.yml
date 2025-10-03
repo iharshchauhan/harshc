@@ -1,0 +1,51 @@
+name: Build and Deploy Hugo to Pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Install Hugo (set to your version; keep extended: true if using SCSS/pipe)
+      - uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.133.1'
+          extended: true
+
+      # OPTIONAL: if you need Tina env vars, set them as repo secrets and uncomment
+      # - name: Export Tina env
+      #   run: |
+      #     echo "TINA_PUBLIC_CLIENT_ID=${{ secrets.TINA_PUBLIC_CLIENT_ID }}" >> $GITHUB_ENV
+      #     echo "TINA_TOKEN=${{ secrets.TINA_TOKEN }}" >> $GITHUB_ENV
+
+      - name: Build
+        run: hugo --minify
+
+      # Upload for Pages (this is NOT the deprecated upload-artifact)
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
