@@ -22,12 +22,24 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.133.1'   # set to your Hugo version
+          hugo-version: '0.133.1'   # set this to your installed Hugo version
           extended: true
 
-      - name: Build
+      # Optional: cache dependencies if you use npm/yarn for PostCSS/Tailwind
+      - name: Setup Node
+        if: hashFiles('**/package.json') != ''
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Install frontend deps
+        if: hashFiles('**/package.json') != ''
+        run: npm ci
+
+      - name: Build Hugo site
         run: hugo --minify
 
       - name: Upload Pages artifact
