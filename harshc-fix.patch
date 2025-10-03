@@ -1,0 +1,9 @@
+*** Begin Patch
+*** Update File: .github/workflows/hugo.yml
+@@
+-      - name: Install Dart Sass
+-        run: sudo snap install dart-sass
++      # Install Sass using npm because snap isn’t available on GitHub runners.
++      - name: Install Sass
++        run: npm install -g sass
+*** End Patch
