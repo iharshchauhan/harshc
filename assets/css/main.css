@@ -361,3 +361,39 @@ table td{
   padding: 6px 13px;
   border: 1px solid #014C00;
 }
+
+/* === Hero Intro Section Styling === */
+.hero {
+  max-width: 750px;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 2rem;
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.hero strong {
+  color: #006d77; /* accent color */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
