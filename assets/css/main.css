@@ -362,38 +362,47 @@ table td{
   border: 1px solid #014C00;
 }
 
-/* === Hero Intro Section Styling === */
+/* === Glassmorphic Hero Intro Section === */
 .hero {
-  max-width: 750px;
+  max-width: 700px;
   margin: 4rem auto;
   text-align: center;
-  padding: 2rem;
-  background: #fafafa;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  animation: fadeIn 1s ease-in-out;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+
+  /* Glass effect */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  /* Subtle shadow */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 .hero h1 {
-  font-size: 2.4rem;
+  font-size: 1.8rem;   /* smaller, modern */
+  font-weight: 600;
   margin-bottom: 1rem;
-  font-weight: 700;
   color: #222;
+  letter-spacing: -0.5px;
 }
 
 .hero p {
-  font-size: 1.15rem;
-  line-height: 1.7;
-  margin-bottom: 1rem;
-  color: #444;
+  font-size: 0.95rem;  /* compact, aesthetic */
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  color: #333;
 }
 
 .hero strong {
-  color: #006d77; /* accent color */
+  color: #0d9488;  /* teal accent */
+  font-weight: 600;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
+.hero em {
+  font-style: italic;
+  color: #444;
 }
+
 
