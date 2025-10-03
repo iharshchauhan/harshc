@@ -1,0 +1,67 @@
+name: Build and Deploy Hugo to Pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Install Hugo (set to your version; keep extended: true if you use SCSS/Pipes)
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.133.1'
+          extended: true
+
+      # OPTIONAL: If you use PostCSS/Tailwind/etc. (package.json present)
+      - name: Setup Node (only if package.json exists)
+        if: hashFiles('**/package.json') != ''
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - name: Install frontend deps (only if package.json exists)
+        if: hashFiles('**/package.json') != ''
+        run: npm ci
+
+      # OPTIONAL: Tina env vars – set these in Settings → Secrets and variables → Actions
+      # Remove this block if you don’t need them.
+      - name: Export build env
+        run: |
+          echo "TINA_PUBLIC_CLIENT_ID=${{ secrets.TINA_PUBLIC_CLIENT_ID }}" >> $GITHUB_ENV
+          echo "TINA_TOKEN=${{ secrets.TINA_TOKEN }}" >> $GITHUB_ENV
+
+      - name: Build site
+        run: hugo --minify
+
+      # Upload the built static site for Pages (NOT the deprecated upload-artifact)
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
