@@ -362,7 +362,14 @@ table td{
   border: 1px solid #014C00;
 }
 
-/* === Glassmorphic Hero Intro Section === */
+/* Import modern font (Inter as example) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body, .hero {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Hero Glass Effect */
 .hero {
   max-width: 700px;
   margin: 4rem auto;
@@ -370,39 +377,41 @@ table td{
   padding: 2rem 2.5rem;
   border-radius: 16px;
 
-  /* Glass effect */
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.25);
 
-  /* Subtle shadow */
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
+/* Headline */
 .hero h1 {
-  font-size: 1.8rem;   /* smaller, modern */
-  font-weight: 600;
+  font-size: 1.9rem;
+  font-weight: 700;
   margin-bottom: 1rem;
-  color: #222;
+  color: #006d77;   /* matches growth/product green */
   letter-spacing: -0.5px;
 }
 
+/* Normal text */
 .hero p {
-  font-size: 0.95rem;  /* compact, aesthetic */
+  font-size: 0.95rem;
   line-height: 1.6;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
   color: #333;
 }
 
+/* Highlighted words */
 .hero strong {
-  color: #0d9488;  /* teal accent */
+  color: #006d77;
   font-weight: 600;
 }
 
-.hero em {
+/* Italic dream line */
+.hero .dream {
   font-style: italic;
+  font-size: 1rem;
   color: #444;
+  margin: 1.2rem 0;
 }
-
-
