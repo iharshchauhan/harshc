@@ -29,8 +29,9 @@ jobs:
           hugo-version: '0.133.1'   # match your local Hugo version
           extended: true
 
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
+      - name: Install Sass
+        run: npm install -g sass
+
 
       - name: Setup Pages
         id: pages
