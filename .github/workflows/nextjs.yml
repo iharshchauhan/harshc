@@ -1,47 +1,67 @@
-            - name: Hugo Build Action
-  # You may pin to the exact commit or the version.
-  # uses: x-actions/hugo@727250e7d803a67ba5a100bcd9645126ad1d30e5
-  uses: x-actions/hugo@v1.1.1
-  with:
-    # git user email
-    GITHUB_EMAIL: # optional, default is me@xiexianbin.cn
-    # git use username
-    GITHUB_USERNAME: # optional, default is xiexianbin
-    # hugo build args
-    HUGO_ARGS: # optional, default is 
+name: Build and Deploy Hugo to Pages
 
-            - name: Hugo Publish
-  # You may pin to the exact commit or the version.
-  # uses: avinassh/hugo-publish@0b38d7b87ea74ae0d326546265b118d889a0ee27
-  uses: avinassh/hugo-publish@0.0.1
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
 
-              - name: Setup Node.js environment
-  uses: actions/setup-node@v5.0.0
-  with:
-    # Set always-auth in npmrc.
-    always-auth: # optional, default is false
-    # Version Spec of the version to use. Examples: 12.x, 10.15.1, >=10.15.0.
-    node-version: # optional
-    # File containing the version Spec of the version to use.  Examples: package.json, .nvmrc, .node-version, .tool-versions.
-    node-version-file: # optional
-    # Target architecture for Node to use. Examples: x86, x64. Will use system architecture by default.
-    architecture: # optional
-    # Set this option if you want the action to check for the latest available version that satisfies the version spec.
-    check-latest: # optional
-    # Optional registry to set up for auth. Will set the registry in a project level .npmrc and .yarnrc file, and set up auth to read in from env.NODE_AUTH_TOKEN.
-    registry-url: # optional
-    # Optional scope for authenticating against scoped registries. Will fall back to the repository owner when using the GitHub Packages registry (https://npm.pkg.github.com/).
-    scope: # optional
-    # Used to pull node distributions from node-versions. Since there's a default, this is typically not supplied by the user. When running this action on github.com, the default value is sufficient. When running on GHES, you can pass a personal access token for github.com if you are experiencing rate limiting.
-    token: # optional, default is ${{ github.server_url == 'https://github.com' && github.token || '' }}
-    # Used to specify a package manager for caching in the default directory. Supported values: npm, yarn, pnpm.
-    cache: # optional
-    # Set to false to disable automatic caching based on the package manager field in package.json. By default, caching is enabled if the package manager field is present.
-    package-manager-cache: # optional, default is true
-    # Used to specify the path to a dependency file: package-lock.json, yarn.lock, etc. Supports wildcards or a list of file names for caching multiple dependencies.
-    cache-dependency-path: # optional
-    # Used to specify an alternative mirror to downlooad Node.js binaries from
-    mirror: # optional
-    # The token used as Authorization header when fetching from the mirror
-    mirror-token: # optional
-          
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Install Hugo (set to your version; keep extended: true if you use SCSS/Pipes)
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.133.1'
+          extended: true
+
+      # OPTIONAL: If you use PostCSS/Tailwind/etc. (package.json present)
+      - name: Setup Node (only if package.json exists)
+        if: hashFiles('**/package.json') != ''
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - name: Install frontend deps (only if package.json exists)
+        if: hashFiles('**/package.json') != ''
+        run: npm ci
+
+      # OPTIONAL: Tina env vars – set these in Settings → Secrets and variables → Actions
+      # Remove this block if you don’t need them.
+      - name: Export build env
+        run: |
+          echo "TINA_PUBLIC_CLIENT_ID=${{ secrets.TINA_PUBLIC_CLIENT_ID }}" >> $GITHUB_ENV
+          echo "TINA_TOKEN=${{ secrets.TINA_TOKEN }}" >> $GITHUB_ENV
+
+      - name: Build site
+        run: hugo --minify
+
+      # Upload the built static site for Pages (NOT the deprecated upload-artifact)
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
