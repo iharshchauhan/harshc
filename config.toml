@@ -1,10 +1,9 @@
-baseurl = "/"
+baseURL = "https://iharshchauhan.github.io/harshc/"
 languageCode = "en-us"
+title = "Harsh Chauhan"
 theme = "archie"
 copyright = "© Harsh Chauhan"
 paginate = 5
-
-paginate=3 # articles per page
 
 [params]
 	mode="auto" # color-mode → dark,toggle or auto
@@ -50,3 +49,4 @@ weight = 4
 disableKinds = ['tags', 'tag1']
 disableKinds = ['tags', 'tag2']
 disableKinds = ['tags', 'tag3']
+
