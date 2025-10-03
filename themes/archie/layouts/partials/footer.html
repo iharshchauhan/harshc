@@ -10,8 +10,8 @@
       href="mailto:hey@iharsh.xyz"> Contact </a> | This page visit emitted <a href="https://www.websitecarbon.com/website/iharsh-xyz/"> 0.04g of CO2 </a>   :)
   </div>
 </footer>
-{{ if not .Site.IsServer }}
-{{ template "_internal/google_analytics.html" . }}
+{{ if not hugo.IsServer }}
+  {{ template "_internal/google_analytics.html" . }}
 {{ end }}
 
 {{- if (isset .Site.Params "social") -}}
