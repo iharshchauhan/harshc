@@ -9,7 +9,7 @@ I eat data for breakfast, and nope, my favourite app isn’t Instagram or Twitte
 ***I'm basically Jon Snow, I know nothing… except how to get shit done! Even if I have no clue what’s going on, give me a minute, and I’ll figure it out.*** 
 <br>I specialize in scaling innovative products faster than you can say 'disrupt the market.' <br/> 
 
-**My journey?** A wild ride through multi-channel product dev, Product magic, and just enough chaos to keep things fun.
+**My journey?** A wild ride through multi-channel product dev, Product magic, and just enough chaos to keep things fun. 
 
 
 *I'm constantly blown away by the insane talent out there and the genius innovations people come up with. If our paths have crossed, there's a 99% chance I’ve stalked your website and thought, 'Whoa, now that's some next-level stuff!' And, yep, my reading list is like a black hole: it keeps expanding, and there's no escape. But hey, I’m always down to add more to the pile!*
