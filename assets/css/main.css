@@ -362,48 +362,41 @@ table td{
   border: 1px solid #014C00;
 }
 
-/* === Working glass card (tweaked) === */
-.test-glass {
-  max-width: 620px;
-  margin: 2.5rem auto;
-  padding: 1rem 1.25rem;             /* smaller padding */
-  border-radius: 16px;
+/* Glassmorphism card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.2); /* semi-transparent */
+  backdrop-filter: blur(12px) saturate(150%);
+  -webkit-backdrop-filter: blur(12px) saturate(150%);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 
-  /* iOS-style glass */
-  background: rgba(255, 255, 255, 0.14);
-  backdrop-filter: blur(16px) saturate(160%);
-  -webkit-backdrop-filter: blur(16px) saturate(160%);
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-}
+  padding: 1.5rem 2rem;   /* smaller, cleaner padding */
+  margin: 2rem auto;
+  max-width: 750px;
 
-/* Heading in your green */
-.test-glass h1,
-.test-glass h2 {
-  color: #014c00;                     /* your requested green */
-  font-size: 1.4rem;                  /* smaller, neater */
-  font-weight: 700;
-  letter-spacing: -0.2px;
-  margin-bottom: 0.8rem;
-}
-
-/* Body text a touch smaller */
-.test-glass p {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   font-size: 0.95rem;
-  line-height: 1.55;
-  margin: 0.6rem 0;
-  color: #222;
+  line-height: 1.6;
 }
 
-/* Dream line italic */
-.test-glass .dream {
-  font-style: italic;
-  color: #333;
+/* Heading styling inside glass */
+.glass-card h1, 
+.glass-card h2 {
+  color: #014c00;  /* your requested green */
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
-/* Match highlights/links to your green */
-.test-glass strong,
-.test-glass a {
+/* Highlight text (growth/product) */
+.glass-card strong {
   color: #014c00;
   font-weight: 600;
+}
+
+/* Italic section */
+.glass-card em {
+  font-style: italic;
+  color: #333;
+  opacity: 0.9;
 }
