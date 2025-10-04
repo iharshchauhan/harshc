@@ -400,3 +400,17 @@ table td{
   color: #333;
   opacity: 0.9;
 }
+.intro-italic {
+  font-style: italic;
+  color: #333; /* keep it soft and aesthetic */
+  margin: 0.8em 0; /* add a little spacing so it breathes */
+}
+
+.intro-italic {
+  font-style: italic;
+  color: #444;
+  opacity: 0.9;
+  border-left: 3px solid #014c00; /* uses your green highlight */
+  padding-left: 12px;
+  margin: 1em 0;
+}
