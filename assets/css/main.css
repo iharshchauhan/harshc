@@ -362,68 +362,18 @@ table td{
   border: 1px solid #014C00;
 }
 
-/* Glass hero section (with fallback) */
-.hero {
-  max-width: 650px;
-  margin: 3rem auto;
-  text-align: center;
-  padding: 1.2rem 1.5rem;
-  border-radius: 16px;
+/* === Glassmorphism test block === */
+.test-glass {
   position: relative;
-  overflow: hidden;
-  
-  /* fallback background if no backdrop-filter */
-  background: rgba(255,255,255, 0.25);
-  border: 1px solid rgba(255,255,255,0.3);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-  color: #222;
-  font-family: inherit;
-}
+  margin: 3rem auto;
+  padding: 2rem;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  background: inherit;
-  z-index: -1;
-}
-
-/* Use backdrop-filter if supported */
-@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
-  .hero {
-    background: rgba(255,255,255, 0.1);
-    border: 1px solid rgba(255,255,255,0.2);
-  }
-  .hero::before {
-    backdrop-filter: blur(20px) saturate(160%);
-    -webkit-backdrop-filter: blur(20px) saturate(160%);
-  }
-}
-
-/* Text inside hero */
-.hero h1 {
-  font-size: 1.7rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: #014c00;  /* your green accent */
-  letter-spacing: -0.5px;
-}
-
-.hero p {
-  font-size: 0.9rem;
-  line-height: 1.55;
-  margin-bottom: 0.8rem;
-  color: #333;
-}
-
-.hero strong, .hero a {
-  color: #014c00;
-  font-weight: 600;
-}
-
-.hero .dream {
-  font-style: italic;
-  font-size: 0.95rem;
-  color: #444;
-  margin: 1rem 0;
+  /* blur behind */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
 }
