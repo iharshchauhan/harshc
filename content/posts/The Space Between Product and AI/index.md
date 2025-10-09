@@ -511,7 +511,7 @@ When these habits normalize, conflict becomes creative, not corrosive.
 
 ---
 
-#### The Long Game: From Coordination to Cognition
+### The Long Game: From Coordination to Cognition
 
 True alignment feels like collective intuition. Over time, roles blur further until no one remembers who suggested what, only that it worked. The AI lead references user empathy; the PM cites a loss function; the designer questions model ethics. At that point, it is not collaboration, it is cognition.
 
